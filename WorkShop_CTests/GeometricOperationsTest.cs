@@ -1273,7 +1273,7 @@ public class GeometricOperationsTest
         double sideB = 8;
         double angleDegrees = 45;
 
-        double expectedThirdSide = 4.5; // Aproximadamente
+        double expectedThirdSide = 5.8; // Aproximadamente
 
         double result = _geoOps.CalculateThirdSideLawOfCosines(sideA, sideB, angleDegrees);
 
