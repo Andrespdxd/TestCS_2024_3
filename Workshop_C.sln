@@ -4,6 +4,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Workshop_C", "Workshop_C\Wo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkShop_CTests", "WorkShop_CTests\WorkShop_CTests.csproj", "{E53DB849-4AFD-4FF7-9308-CCD22C0D6ACC}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".github", ".github", "{AFAB07F5-0269-4E9D-9B4A-7D254943AA4B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "workflow", "workflow", "{C889E06D-1309-4E76-8074-27A4A801D0EF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +22,8 @@ Global
 		{E53DB849-4AFD-4FF7-9308-CCD22C0D6ACC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E53DB849-4AFD-4FF7-9308-CCD22C0D6ACC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E53DB849-4AFD-4FF7-9308-CCD22C0D6ACC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C889E06D-1309-4E76-8074-27A4A801D0EF} = {AFAB07F5-0269-4E9D-9B4A-7D254943AA4B}
 	EndGlobalSection
 EndGlobal

@@ -6,7 +6,7 @@ public class StringOperation
     //Concatenate 2 strings with a space among it
    public string concat2trings(string txt1, string txt2)
     {
-        return txt1+" "+txt2;
+        return txt1+"  "+txt2;
     }
 
    //Return the chars in the string
