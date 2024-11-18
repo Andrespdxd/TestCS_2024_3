@@ -6,48 +6,104 @@ public class StringOperation
     //Concatenate 2 strings with a space among it
    public string concat2trings(string txt1, string txt2)
     {
-        return txt1+"  "+txt2;
+        return txt1+" "+txt2;
     }
 
    //Return the chars in the string
     public int charsInString(string txt1)
     {
-        return 0;
+        int contadorchar = 0;
+
+        foreach (char character in txt1)
+        {
+            contadorchar++;
+        }
+        return contadorchar;
     }
     
     //return the letters in the string
     public int lettersInString(string txt)
     {
-        return 0;
+        txt = txt.ToLower();
+        int letterCount = 0;
+
+        foreach (char c in txt)
+        {
+            if (Char.IsLetter(c))
+            {
+                letterCount++;
+            }
+        }
+        return letterCount;
     }
     
     //Count the uppercase letters in a String
     public int upperInString(string txt)
     {
-        return 0;
+        int uppercounter = 0;
+
+        foreach (char c in txt)
+        {
+            if (Char.IsUpper(c))
+            {
+                uppercounter++;
+            }
+        }
+        return uppercounter;
+   
     }
     
     //count the times a char appears in the string (upper and lower)
     public int charInString(string txt, char a)
     {
-        return 0;
+        txt = txt.ToLower();
+        int contador = 0;
+
+        foreach (char c in txt)
+        {
+            if (c == a)
+            {
+                contador++;
+            }
+        }
+        
+        return contador;
     }
    
     //Reverse string
     public string reverseString(string txt)
     {
-        return "";
+        char[] reversa = txt.ToCharArray();
+        Array.Reverse(reversa);
+        return new string(reversa);
+ 
     }
     
     //Is palindrome?
     public bool isPalindrome(string txt)
     {
-        return false;
+        string txt2 = txt.ToLower().Replace(" ", "");
+        
+        char[] charArray = txt2.ToCharArray();
+        Array.Reverse(charArray);
+        string reversa = new string(charArray);
+        
+        return txt2 == reversa;
+        
     }
     
     //substring in string
     public int substring(string txt, string substring)
     {
-        return 0;
+        int count = 0;
+        int startIndex = 0;
+
+        while ((startIndex = txt.IndexOf(substring, startIndex)) != -1)
+        {
+            count++;
+            startIndex += substring.Length; 
+        }
+
+        return count;
     }
 }
